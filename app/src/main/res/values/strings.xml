@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CheckTour</string>
+    <string name="skip">LEWATI</string>
+    <string name="next">LANJUT</string>
+    <string name="start">MULAI</string>
+
+    <string name="slide1">More Fun More Comfortable</string>
+
+    <string name="slide2">Family Tour</string>
+    <string name="slide2_desc">Temukan destinasi yang cocok untuk keluarga Anda</string>
+
+    <string name="slide3">Study Tour</string>
+    <string name="slide3_desc">Belajar sekaligus bermain yang mengasyikan</string>
+
+
+    <string name="slide4">Honeymoon</string>
+    <string name="slide4_desc">Destinasi eksotis yang menambah kelanggengan dengan pasangan</string>
+
+
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1075078268835",
+    "firebase_url": "https://checktour-69ffa.firebaseio.com",
+    "project_id": "checktour-69ffa",
+    "storage_bucket": "checktour-69ffa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075078268835:android:5fcf5db1b68c8238",
+        "android_client_info": {
+          "package_name": "id.sch.smktelkom_mlg.learn.checktourcom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075078268835-ebfn7n5m65nccg9bph4sdeima11qk577.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.sch.smktelkom_mlg.learn.checktourcom",
+            "certificate_hash": "c999cea06c07a8d90c51408544684b835f113b99"
+          }
+        },
+        {
+          "client_id": "1075078268835-ci0lagpij32cdplgpotnue5pcfb9ktb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoCZnfpJhtl-O61Y8i4DoY1jB0P88NlIA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075078268835-ci0lagpij32cdplgpotnue5pcfb9ktb5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
