@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="id.sch.smktelkom_mlg.learn.checktourcom.SplashScreen">
+    tools:context="id.sch.smktelkom_mlg.learn.checktourcom.IntroSlider.SplashScreen">
 
     <ImageView
         android:id="@+id/logo"

@@ -9,7 +9,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
  * Created by Rezki on 3/16/2018.
  */
 
-public class ImageSlider extends Application {
+public class FontChange extends Application {
     @Override
     public void onCreate() {
         super.onCreate();

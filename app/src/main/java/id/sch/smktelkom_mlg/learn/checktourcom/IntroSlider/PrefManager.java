@@ -1,4 +1,4 @@
-package id.sch.smktelkom_mlg.learn.checktourcom;
+package id.sch.smktelkom_mlg.learn.checktourcom.IntroSlider;
 
 import android.content.Context;
 import android.content.SharedPreferences;

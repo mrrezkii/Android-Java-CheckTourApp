@@ -1,4 +1,4 @@
-package id.sch.smktelkom_mlg.learn.checktourcom;
+package id.sch.smktelkom_mlg.learn.checktourcom.IntroSlider;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,6 +18,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import id.sch.smktelkom_mlg.learn.checktourcom.Auth.LoginActivity;
+import id.sch.smktelkom_mlg.learn.checktourcom.R;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class ImageSlider extends AppCompatActivity {
@@ -149,7 +151,7 @@ public class ImageSlider extends AppCompatActivity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(ImageSlider.this, MainActivity.class));
+        startActivity(new Intent(ImageSlider.this, LoginActivity.class));
         finish();
     }
 
