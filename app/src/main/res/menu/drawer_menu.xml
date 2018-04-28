@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_profil"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/nav_profil"></item>
+        <item
+            android:id="@+id/menu_setting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_pengaturan"></item>
+        <item
+            android:id="@+id/menu_keluar"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/nav_keluar"></item>
+    </group>
+</menu>

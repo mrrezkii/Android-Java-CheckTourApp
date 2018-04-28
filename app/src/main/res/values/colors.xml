@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#1A237E</color>
+    <color name="colorPrimaryDark">#1A237E</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorLogo">#4caf50</color>
     <color name="colorWelcome">#039BE5</color>
@@ -21,6 +21,7 @@
     <color name="dot_light_screen2">#A9A9A9</color>
     <color name="dot_light_screen3">#A9A9A9</color>
     <color name="dot_light_screen4">#A9A9A9</color>
+    <color name="colorWhite">#FAFAFA</color>
 
     <array name="array_dot_active">
         <item>@color/dot_light_screen1</item>
