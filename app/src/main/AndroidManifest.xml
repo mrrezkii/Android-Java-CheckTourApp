@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".Fonts.FontChange"
+        android:name=".IntroApp.FontChange"
         android:allowBackup="true"
         android:hardwareAccelerated="false"
         android:icon="@drawable/icon"
@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/CheckTourTheme">
         <activity
-            android:name=".IntroSlider.SplashScreen"
+            android:name=".IntroApp.SplashScreen"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
@@ -29,11 +29,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".IntroSlider.ImageSlider"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity
-            android:name=".DashboardActivity"
+            android:name=".IntroApp.ImageSlider"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
@@ -44,6 +40,9 @@
             android:name=".Auth.SignupActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".BottomNavigation.NavFamilyActivity" />
+        <activity android:name=".BottomNavigation.NavStudyTourActivity" />
+        <activity android:name=".BottomNavigation.NavHoneyMoonActivity"></activity>
     </application>
 
 </manifest>

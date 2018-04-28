@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_2">
+        <item
+            android:id="@+id/menu_kembali"
+            android:icon="@drawable/ic_arrow_back_black_24dp"
+            android:title="@string/nav_keluar" />
+        <item
+            android:id="@+id/menu_list_study_tour"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="@string/nav_list" />
+        <item
+            android:id="@+id/menu_profil"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/nav_profil" />
+
+    </group>
+</menu>

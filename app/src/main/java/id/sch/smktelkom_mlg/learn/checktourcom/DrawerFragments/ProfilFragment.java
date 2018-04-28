@@ -1,4 +1,4 @@
-package id.sch.smktelkom_mlg.learn.checktourcom.DrawerFragment;
+package id.sch.smktelkom_mlg.learn.checktourcom.DrawerFragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

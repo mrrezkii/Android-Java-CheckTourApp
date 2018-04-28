@@ -6,14 +6,14 @@
         <item
             android:id="@+id/menu_profil"
             android:icon="@drawable/ic_person_black_24dp"
-            android:title="@string/nav_profil"></item>
+            android:title="@string/nav_profil" />
         <item
             android:id="@+id/menu_setting"
             android:icon="@drawable/ic_settings_black_24dp"
-            android:title="@string/nav_pengaturan"></item>
+            android:title="@string/nav_pengaturan" />
         <item
-            android:id="@+id/menu_keluar"
+            android:id="@+id/menu_kembali"
             android:icon="@drawable/ic_menu_send"
-            android:title="@string/nav_keluar"></item>
+            android:title="@string/nav_keluar" />
     </group>
 </menu>

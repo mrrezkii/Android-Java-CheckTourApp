@@ -1,4 +1,4 @@
-package id.sch.smktelkom_mlg.learn.checktourcom.Fonts;
+package id.sch.smktelkom_mlg.learn.checktourcom.IntroApp;
 
 import android.app.Application;
 
