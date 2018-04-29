@@ -27,7 +27,7 @@
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/MainActivity" />
         <activity
             android:name=".IntroApp.ImageSlider"
             android:screenOrientation="portrait"
@@ -40,9 +40,18 @@
             android:name=".Auth.SignupActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity android:name=".BottomNavigation.NavFamilyActivity" />
-        <activity android:name=".BottomNavigation.NavStudyTourActivity" />
-        <activity android:name=".BottomNavigation.NavHoneyMoonActivity"></activity>
+        <activity
+            android:name=".BottomNavigation.NavFamilyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CheckTourTheme" />
+        <activity
+            android:name=".BottomNavigation.NavStudyTourActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CheckTourTheme" />
+        <activity
+            android:name=".BottomNavigation.NavHoneyMoonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CheckTourTheme" />
     </application>
 
 </manifest>

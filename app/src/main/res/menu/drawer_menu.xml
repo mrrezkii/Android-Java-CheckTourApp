@@ -4,6 +4,10 @@
         android:id="@+id/menu_1"
         android:checkableBehavior="single">
         <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_home" />
+        <item
             android:id="@+id/menu_profil"
             android:icon="@drawable/ic_person_black_24dp"
             android:title="@string/nav_profil" />
@@ -12,8 +16,8 @@
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="@string/nav_pengaturan" />
         <item
-            android:id="@+id/menu_kembali"
-            android:icon="@drawable/ic_menu_send"
+            android:id="@+id/menu_keluar"
+            android:icon="@drawable/ic_keyboard_tab_black_24dp"
             android:title="@string/nav_keluar" />
     </group>
 </menu>

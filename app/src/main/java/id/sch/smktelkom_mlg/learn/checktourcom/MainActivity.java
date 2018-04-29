@@ -1,7 +1,6 @@
 package id.sch.smktelkom_mlg.learn.checktourcom;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -12,17 +11,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.KeyEvent;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import java.util.Timer;
 import java.util.TimerTask;
 
-import id.sch.smktelkom_mlg.learn.checktourcom.Adapter.MainAdapter;
-import id.sch.smktelkom_mlg.learn.checktourcom.BottomNavigation.NavFamilyActivity;
-import id.sch.smktelkom_mlg.learn.checktourcom.BottomNavigation.NavHoneyMoonActivity;
-import id.sch.smktelkom_mlg.learn.checktourcom.BottomNavigation.NavStudyTourActivity;
+import id.sch.smktelkom_mlg.learn.checktourcom.DrawerFragments.HomeFragment;
 import id.sch.smktelkom_mlg.learn.checktourcom.DrawerFragments.ProfilFragment;
 import id.sch.smktelkom_mlg.learn.checktourcom.DrawerFragments.SettingFragment;
 import id.sch.smktelkom_mlg.learn.checktourcom.Toolbar.MainToolbar;
@@ -52,6 +46,7 @@ public class MainActivity extends MainToolbar {
 
         selectDrawerItem(navigationView.getMenu().getItem(0));
 
+        /*
         // View Pager START//
         viewPager = findViewById(R.id.viewPager);
 
@@ -88,7 +83,7 @@ public class MainActivity extends MainToolbar {
             }
         });
 
-
+        */
     }
 
     private void setupDrawerContent(final NavigationView navigationView) {
@@ -111,14 +106,17 @@ public class MainActivity extends MainToolbar {
         Fragment fragment = null;
 
         switch (menuItem.getItemId()) {
-            case R.id.menu_profil:
-                fragment = ProfilFragment.newInstance();
+            case R.id.menu_home:
+                fragment = HomeFragment.newInstance();
                 break;
             case R.id.menu_setting:
                 fragment = SettingFragment.newInstance();
                 break;
-            default:
+            case R.id.menu_profil:
                 fragment = ProfilFragment.newInstance();
+                break;
+            default:
+                fragment = HomeFragment.newInstance();
                 break;
         }
 

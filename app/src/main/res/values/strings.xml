@@ -50,8 +50,9 @@
     <string name="action_example">Example action</string>
     <string name="nav_profil">Profil</string>
     <string name="nav_pengaturan">Pengaturan</string>
-    <string name="nav_keluar">Kembali</string>
+    <string name="nav_keluar">Sign Out</string>
     <string name="nav_list">List</string>
+    <string name="nav_kembali">Kembali</string>
 
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
@@ -63,5 +64,6 @@
     <string name="action_settings">Settings</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
+    <string name="nav_home">Home</string>
 
 </resources>

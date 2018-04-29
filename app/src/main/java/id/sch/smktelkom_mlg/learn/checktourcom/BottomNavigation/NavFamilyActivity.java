@@ -1,5 +1,6 @@
 package id.sch.smktelkom_mlg.learn.checktourcom.BottomNavigation;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -11,7 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import id.sch.smktelkom_mlg.learn.checktourcom.Helper.BottomNavigationBehavior;
-import id.sch.smktelkom_mlg.learn.checktourcom.NavigationFragments.KembaliFragment;
+import id.sch.smktelkom_mlg.learn.checktourcom.MainActivity;
 import id.sch.smktelkom_mlg.learn.checktourcom.NavigationFragments.ListFamilyFragment;
 import id.sch.smktelkom_mlg.learn.checktourcom.NavigationFragments.ProfilFragment;
 import id.sch.smktelkom_mlg.learn.checktourcom.R;
@@ -32,8 +33,8 @@ public class NavFamilyActivity extends AppCompatActivity {
                     return true;
                 case R.id.menu_kembali:
                     //toolbar.setTitle("Kembali");
-                    fragment = new KembaliFragment();
-                    loadFragment(fragment);
+                    Intent kembali = new Intent(NavFamilyActivity.this, MainActivity.class);
+                    startActivity(kembali);
                     return true;
                 case R.id.menu_profil:
                     //toolbar.setTitle("Profil");
