@@ -1,4 +1,4 @@
-package id.sch.smktelkom_mlg.learn.checktourcom.DrawerFragments;
+package id.sch.smktelkom_mlg.learn.checktourcom.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
+import java.util.TimerTask;
+
+import id.sch.smktelkom_mlg.learn.checktourcom.Adapter.MainAdapter;
 import id.sch.smktelkom_mlg.learn.checktourcom.BottomNavigation.NavFamilyActivity;
 import id.sch.smktelkom_mlg.learn.checktourcom.BottomNavigation.NavHoneyMoonActivity;
 import id.sch.smktelkom_mlg.learn.checktourcom.BottomNavigation.NavStudyTourActivity;
@@ -36,9 +39,9 @@ public class HomeFragment extends Fragment {
         // View Pager START//
         viewPager = rootView.findViewById(R.id.viewPager);
 
-        /*MainAdapter mainAdapter = new MainAdapter(this);
+        MainAdapter mainAdapter = new MainAdapter(getContext());
 
-        viewPager.setAdapter(mainAdapter); */
+        viewPager.setAdapter(mainAdapter);
 
         //Timer timer = new Timer();
         //timer.scheduleAtFixedRate(new MyTimerTask(), 2000, 4000);
@@ -84,11 +87,12 @@ public class HomeFragment extends Fragment {
         Intent intent = new Intent(getActivity(), NavHoneyMoonActivity.class);
         startActivity(intent);
     }
-    /*public class MyTimerTask extends TimerTask {
+
+    public class MyTimerTask extends TimerTask {
 
         @Override
         public void run() {
-            HomeFragment.this.runOnUiThread(new Runnable() {
+            getActivity().runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
                     if (viewPager.getCurrentItem() == 0) {
@@ -102,5 +106,6 @@ public class HomeFragment extends Fragment {
                     }
                 }
             });
-        } */
+        }
+    }
 }

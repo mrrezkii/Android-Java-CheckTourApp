@@ -20,6 +20,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
         android:text="Hi, how are you ?"
+        android:textColor="@color/colorWhiteStyle"
         android:textSize="20sp" />
 
 </RelativeLayout>

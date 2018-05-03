@@ -1,4 +1,4 @@
-package id.sch.smktelkom_mlg.learn.checktourcom.NavigationFragments;
+package id.sch.smktelkom_mlg.learn.checktourcom.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

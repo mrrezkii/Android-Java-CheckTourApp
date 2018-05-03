@@ -11,10 +11,10 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+import id.sch.smktelkom_mlg.learn.checktourcom.Fragments.ListStudyTourFragment;
+import id.sch.smktelkom_mlg.learn.checktourcom.Fragments.ProfilFragment;
 import id.sch.smktelkom_mlg.learn.checktourcom.Helper.BottomNavigationBehavior;
 import id.sch.smktelkom_mlg.learn.checktourcom.MainActivity;
-import id.sch.smktelkom_mlg.learn.checktourcom.NavigationFragments.ListStudyTourFragment;
-import id.sch.smktelkom_mlg.learn.checktourcom.NavigationFragments.ProfilFragment;
 import id.sch.smktelkom_mlg.learn.checktourcom.R;
 
 public class NavStudyTourActivity extends AppCompatActivity {

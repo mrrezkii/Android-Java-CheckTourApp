@@ -1,4 +1,4 @@
-package id.sch.smktelkom_mlg.learn.checktourcom.DrawerFragments;
+package id.sch.smktelkom_mlg.learn.checktourcom.Fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,20 +9,17 @@ import android.view.ViewGroup;
 
 import id.sch.smktelkom_mlg.learn.checktourcom.R;
 
-/**
- * Created by Rezki on 4/28/2018.
- */
 
-public class SettingFragment extends Fragment {
+public class ProfilFragment extends Fragment {
 
-    public static SettingFragment newInstance() {
-        return new SettingFragment();
+    public static ProfilFragment newInstance() {
+        return new ProfilFragment();
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_setting, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_profil, container, false);
 
         return rootView;
     }

@@ -1,4 +1,4 @@
-package id.sch.smktelkom_mlg.learn.checktourcom.NavigationFragments;
+package id.sch.smktelkom_mlg.learn.checktourcom.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,14 +9,14 @@ import android.view.ViewGroup;
 import id.sch.smktelkom_mlg.learn.checktourcom.R;
 
 
-public class ListFamilyFragment extends Fragment {
+public class ListHoneyMoonFragment extends Fragment {
 
-    public ListFamilyFragment() {
+    public ListHoneyMoonFragment() {
         // Required empty public constructor
     }
 
-    public static ListFamilyFragment newInstance(String param1, String param2) {
-        ListFamilyFragment fragment = new ListFamilyFragment();
+    public static ListHoneyMoonFragment newInstance(String param1, String param2) {
+        ListHoneyMoonFragment fragment = new ListHoneyMoonFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -31,6 +31,6 @@ public class ListFamilyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_list_family, container, false);
+        return inflater.inflate(R.layout.fragment_list_honey_moon, container, false);
     }
 }

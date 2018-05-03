@@ -1,8 +1,10 @@
 package id.sch.smktelkom_mlg.learn.checktourcom;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -12,9 +14,13 @@ import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import id.sch.smktelkom_mlg.learn.checktourcom.DrawerFragments.HomeFragment;
-import id.sch.smktelkom_mlg.learn.checktourcom.DrawerFragments.ProfilFragment;
-import id.sch.smktelkom_mlg.learn.checktourcom.DrawerFragments.SettingFragment;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import id.sch.smktelkom_mlg.learn.checktourcom.Auth.LoginActivity;
+import id.sch.smktelkom_mlg.learn.checktourcom.Fragments.HomeFragment;
+import id.sch.smktelkom_mlg.learn.checktourcom.Fragments.ProfilFragment;
+import id.sch.smktelkom_mlg.learn.checktourcom.Fragments.SettingFragment;
 import id.sch.smktelkom_mlg.learn.checktourcom.Toolbar.MainToolbar;
 
 public class MainActivity extends MainToolbar {
@@ -22,6 +28,8 @@ public class MainActivity extends MainToolbar {
     private NavigationView navigationView;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle actionBarDrawerToggle;
+    private FirebaseAuth.AuthStateListener authListener;
+    private FirebaseAuth auth;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -38,6 +46,22 @@ public class MainActivity extends MainToolbar {
         drawerLayout.removeDrawerListener(actionBarDrawerToggle);
 
         selectDrawerItem(navigationView.getMenu().getItem(0));
+
+        auth = FirebaseAuth.getInstance();
+
+        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        authListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user == null) {
+                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                    finish();
+                }
+            }
+        };
+
 
     }
 
@@ -70,6 +94,9 @@ public class MainActivity extends MainToolbar {
             case R.id.menu_profil:
                 fragment = ProfilFragment.newInstance();
                 break;
+            case R.id.menu_keluar:
+                signOut();
+                break;
             default:
                 fragment = HomeFragment.newInstance();
                 break;
@@ -84,10 +111,27 @@ public class MainActivity extends MainToolbar {
         drawerLayout.closeDrawers();
     }
 
+    public void signOut() {
+        auth.signOut();
+    }
+
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        auth.addAuthStateListener(authListener);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (authListener != null) {
+            auth.removeAuthStateListener(authListener);
+        }
+    }
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        // Sync the toggle state after onRestoreInstanceState has occurred.
         actionBarDrawerToggle.syncState();
     }
 
