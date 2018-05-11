@@ -7,72 +7,46 @@ import java.io.Serializable;
  */
 
 public class HoneyMoonModel implements Serializable {
-    String deskripsi, destinasi, fasilitas, harga, idPacket, lokasi, url;
+    String Deskripsi, Destinasi, Fasilitas, Harga, IDPacket, Lokasi, url;
 
     public HoneyMoonModel() {
-        this.deskripsi = deskripsi;
-        this.destinasi = destinasi;
-        this.fasilitas = fasilitas;
-        this.harga = harga;
-        this.idPacket = idPacket;
-        this.lokasi = lokasi;
+    }
+
+    public HoneyMoonModel(String deskripsi, String destinasi, String fasilitas, String harga, String IDPacket, String lokasi, String url) {
+        Deskripsi = deskripsi;
+        Destinasi = destinasi;
+        Fasilitas = fasilitas;
+        Harga = harga;
+        this.IDPacket = IDPacket;
+        Lokasi = lokasi;
         this.url = url;
     }
 
     public String getDeskripsi() {
-        return deskripsi;
-    }
-
-    public void setDeskripsi(String deskripsi) {
-        this.deskripsi = deskripsi;
+        return Deskripsi;
     }
 
     public String getDestinasi() {
-        return destinasi;
-    }
-
-    public void setDestinasi(String destinasi) {
-        this.destinasi = destinasi;
+        return Destinasi;
     }
 
     public String getFasilitas() {
-        return fasilitas;
-    }
-
-    public void setFasilitas(String fasilitas) {
-        this.fasilitas = fasilitas;
+        return Fasilitas;
     }
 
     public String getHarga() {
-        return harga;
+        return Harga;
     }
 
-    public void setHarga(String harga) {
-        this.harga = harga;
-    }
-
-    public String getIdPacket() {
-        return idPacket;
-    }
-
-    public void setIdPacket(String idPacket) {
-        this.idPacket = idPacket;
+    public String getIDPacket() {
+        return IDPacket;
     }
 
     public String getLokasi() {
-        return lokasi;
-    }
-
-    public void setLokasi(String lokasi) {
-        this.lokasi = lokasi;
+        return Lokasi;
     }
 
     public String getUrl() {
         return url;
     }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
 }

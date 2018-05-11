@@ -19,8 +19,7 @@ import id.sch.smktelkom_mlg.learn.checktourcom.R;
 
 public class NavHoneyMoonActivity extends AppCompatActivity {
     private ActionBar toolbar;
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -50,7 +49,7 @@ public class NavHoneyMoonActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nav_honey_moon);
+        setContentView(R.layout.activity_navfamily);
 
         toolbar = getSupportActionBar();
 

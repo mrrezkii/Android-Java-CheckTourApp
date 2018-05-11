@@ -19,8 +19,7 @@ import id.sch.smktelkom_mlg.learn.checktourcom.R;
 
 public class NavFamilyActivity extends AppCompatActivity {
     private ActionBar toolbar;
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {

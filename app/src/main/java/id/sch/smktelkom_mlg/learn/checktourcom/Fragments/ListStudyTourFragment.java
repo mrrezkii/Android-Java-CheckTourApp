@@ -2,7 +2,6 @@ package id.sch.smktelkom_mlg.learn.checktourcom.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +10,7 @@ import id.sch.smktelkom_mlg.learn.checktourcom.R;
 
 
 public class ListStudyTourFragment extends Fragment {
-    RecyclerView lisStudyTour;
-    RecyclerView.LayoutManager layoutManager;
+
 
     public ListStudyTourFragment() {
         // Required empty public constructor
@@ -35,6 +33,7 @@ public class ListStudyTourFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_list_study_tour, container, false);
+
 
         return rootView;
     }

@@ -7,11 +7,14 @@
     android:layout_gravity="center"
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
     android:layout_marginRight="@dimen/activity_horizontal_margin"
-    android:foreground="?attr/selectableItemBackground">
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="16dp"
+    android:theme="@style/AppTheme">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhiteStyle">
 
         <TextView
             android:id="@+id/textViewFasilitas"
@@ -45,10 +48,12 @@
             android:id="@+id/textViewJudul"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_alignBottom="@+id/imageView"
+            android:layout_above="@+id/textViewDeskripsi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
             android:layout_marginLeft="16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
-            android:textColor="@android:color/white"
+            android:textColor="@color/colorWhiteStyle"
             tools:text="Judul" />
 
         <TextView
@@ -57,8 +62,7 @@
             android:layout_height="40dp"
             android:layout_alignParentTop="true"
             android:layout_toEndOf="@+id/buttonFavorite"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-            android:textColor="@android:color/white"
+            android:textColor="@color/colorWhiteStyle"
             tools:text="Harga" />
 
         <TextView
@@ -71,6 +75,7 @@
             android:maxLines="1"
             android:padding="16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#212121"
             tools:text="Deskripsi" />
 
 

@@ -80,6 +80,7 @@ public class MainActivity extends MainToolbar {
                 fragment = ProfilFragment.newInstance();
                 break;
             case R.id.menu_keluar:
+                fragment = HomeFragment.newInstance();
                 signOut();
                 break;
             default:
