@@ -14,10 +14,11 @@ import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.firebase.ui.auth.AuthUI;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
-import id.sch.smktelkom_mlg.learn.checktourcom.Auth.LoginActivity;
 import id.sch.smktelkom_mlg.learn.checktourcom.Fragments.HomeFragment;
 import id.sch.smktelkom_mlg.learn.checktourcom.Fragments.ProfilFragment;
 import id.sch.smktelkom_mlg.learn.checktourcom.Fragments.SettingFragment;
@@ -46,22 +47,6 @@ public class MainActivity extends MainToolbar {
         drawerLayout.removeDrawerListener(actionBarDrawerToggle);
 
         selectDrawerItem(navigationView.getMenu().getItem(0));
-
-        auth = FirebaseAuth.getInstance();
-
-        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-
-        authListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user == null) {
-                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
-                    finish();
-                }
-            }
-        };
-
 
     }
 
@@ -111,24 +96,19 @@ public class MainActivity extends MainToolbar {
         drawerLayout.closeDrawers();
     }
 
-    public void signOut() {
-        auth.signOut();
+    private void signOut() {
+        AuthUI.getInstance()
+                .signOut(this)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    public void onComplete(@NonNull Task<Void> task) {
+                        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
     }
 
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        auth.addAuthStateListener(authListener);
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        if (authListener != null) {
-            auth.removeAuthStateListener(authListener);
-        }
-    }
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);

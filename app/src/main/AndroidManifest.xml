@@ -33,11 +33,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name=".Auth.LoginActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity
-            android:name=".Auth.SignupActivity"
+            android:name=".LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
@@ -52,6 +48,7 @@
             android:name=".BottomNavigation.NavHoneyMoonActivity"
             android:screenOrientation="portrait"
             android:theme="@style/CheckTourTheme" />
+        <activity android:name=".DetailActivity"></activity>
     </application>
 
 </manifest>

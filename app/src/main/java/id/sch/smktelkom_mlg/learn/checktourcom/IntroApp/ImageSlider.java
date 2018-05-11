@@ -18,7 +18,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import id.sch.smktelkom_mlg.learn.checktourcom.Auth.LoginActivity;
+import id.sch.smktelkom_mlg.learn.checktourcom.LoginActivity;
 import id.sch.smktelkom_mlg.learn.checktourcom.R;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 

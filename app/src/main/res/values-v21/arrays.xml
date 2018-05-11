@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2016 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <string-array name="places">
+        <item>Pantai Sanur</item>
+        <item>Pantai balangan</item>
+        <item>Pantai Tanah Lot</item>
+        <item>Pantai Legian</item>
+        <item>Pantai NusaDua</item>
+        <item>Pantai Pabean</item>
+        <item>Pantai Indrayanti</item>
+        <item>Malioboro</item>
+        <item>Museum Merapi</item>
+        <item>Pantai Parangtritis</item>
+        <item>Candi Prambanan</item>
+    </string-array>
+    <string-array name="place_desc">
+        <item>Pantai Sanur merupakan salah satu pantai di Pulau Bali yang menarik untuk dikunjungi. Keindahan panorama alamnya membuat Pantai Sanur terkenal bahkan sejak jaman dahulu.
+            Dalam sejarah Bali kuno, Pantai Sanur telah dikenal sebagai pantai yang indah, hal itu nampak dalam Prasasti Raja Kasari Warmadewa, seorang raja yang berkeraton di Singhadwala pada tahun 917 M.
+            Sekarang, prasasti tersebut terdapat di daerah Blanjong, bagian selatan Pantai Sanur.
+        </item>
+        <item>Pantai Balangan, mungkin nama pantai ini ngga se-terkenal pantai lainnya seperti Pantai Kuta.
+            Namun, di tempat inilah pertama kalinya saya melihat pantai dengan rangkaian pohon kelapa yang tertata rapi, dan unik.
+            Sangat jarang lho saya menemui pantai dengan komposisi pohon kelapa yang pas di Pulau Bali. Namun saya tidak tahu ya, apakah rangkaian pohon kelapa itu natural atau buatan manusia.
+        </item>
+        <item>Pura Tanah Lot adalah sebuah objek wisata di Bali, Indonesia. Di sini ada dua pura yang terletak di atas batu besar. Satu terletak di atas bongkahan batu dan satunya terletak di atas tebing mirip dengan Pura Uluwatu.
+            Pura Tanah Lot ini merupakan bagian dari pura Dang Kahyangan. Pura Tanah Lot merupakan pura laut tempat pemujaan dewa-dewa penjaga laut.
+            Tanah Lot terkenal sebagai tempat yang indah untuk melihat matahari terbenam.
+        </item>
+        <item>Daya tarik utama pantai Legian terletak pada, pesisir pantai sangat landai dan memiliki bentangan pasir pantai yang sangat panjang.
+            Terbentang dari sisi utara pantai Kuta, sampai sisi selatan pantai Seminyak.
+        </item>
+        <item>Nusa Dua adalah merupakan sebuah tanjung yang terletak di tenggara pulau Bali.
+            Jaraknya terletak kurang lebih 40 kilometer dari Denpasar ibukota provinsi Bali.Nusa
+            Dua juga merupakan lokasi Konferensi PBB tentang Perubahan Iklim 2008 antara 3 Desember dan 14 Desember 2007.
+        </item>
+        <item>Wisata Pantai Pabean Ketewel di Sukawati Gianyar Bali adalah salah satu tempat wisata yang berada di Desa Ketewel, Kecamatan Sukawati, Kabupaten Gianyar, Bali, Indonesia.
+            Wisata Pantai Pabean Ketewel di Sukawati Gianyar Bali adalah tempat wisata yang ramai dengan wisatawan pada hari biasa maupun hari liburan.
+            Tempat ini sangat indah dan bisa memberikan sensasi yang berbeda dengan aktivitas kita sehari hari.
+        </item>
+        <item>Terletak di Wonosari tepatnya sebelah timur Pantai Sundak, Pantai Indrayanti merupakan sebuah pantai baru yang ada diYogyakarta.
+            Pantai Indrayanti memiliki keindahan yang tidak kalah dibandingkan dengan pantai-pantai sekitar daerah Wonosari lainnya.
+            Pantai ini tidak berukuran terlalu besar, hal tersebut membuat wilayah pantai tidak banyak dikunjungi oleh wisatawan sehingga anda
+            dapat menikmati keindahan alam sekitar pantai dengan lebih tenang dan maksimal.
+        </item>
+        <item>Malioboro merupakan kawasan perbelanjaan yang legendaris yang menjadi salah satu kebanggaan kota Yogyakarta.
+            Penamaan Malioboro berasal dari nama seorang anggota kolonial Inggris yang dahulu pernah menduduki Jogja pada tahun 1811 – 1816 M
+            yang bernama Marlborough
+        </item>
+        <item>Museum Gunung Merapi diresmikan  pada tanggal 1 Oktober 2009 oleh Mentri Energi dan Sumber Daya Mineral (ESDM) Bapak Purnomo Yusgiantoro.
+            Museum ini didirkan bertujuan untuk wahana pendidikan, wahana konservasi berkelanjutan serta  pengembangan ilmu tentang bencana gunung
+            merapi, gempa bumi, dan bencana alam lainnya.
+        </item>
+        <item>Parangtritis menurut kisah legenda pada zaman Kerajaan Majapahit, ada seorang pelarian dari Kerajaan tersebut yang bernama
+            Dipokusumo yang ditempat itu sedang melakukan semedi. Ketika sedang melakukan semedi, ia melihat air menetes ( tumaritis ) yang berasal
+            dari celah-celah batu karang ( parang ). Kemudian Dipokusumo memberi nama daerah itu Parangtritis yang artinya air yang menetes dari batu.
+            Pantai ini diyakini oleh masyarakat setempat sebagai perwujudan kesatuan dari Gunung Merapi, Keraton Jogja dan Parangtritis sendiri.
+            Sehingga masyarakat selalu menghubungkan bilamana ada fenomena alam yang sedang terjadi di antara ketiga tempat hal tersebut.
+        </item>
+        <item>Candi Prambanan merupakan candi Hindu yang terbesar di Indonesia. Sampai saat ini belum dapat dipastikan kapan candi ini dibangun
+            dan atas perintah siapa, namun kuat dugaan bahwa Candi Prambanan dibangun sekitar pertengahan abad ke-9 oleh raja dari Wangsa Sanjaya,
+            yaitu Raja Balitung Maha Sambu. Dugaan tersebut didasarkan pada isi Prasasti Syiwagrha yang ditemukan di sekitar Prambanan dan saat ini
+            tersimpan di Museum Nasional di Jakarta. Prasasti berangka tahun 778 Saka (856 M) ini ditulis pada masa pemerintahan Rakai Pikatan.
+        </item>
+    </string-array>
+    <string-array name="place_details">
+        <item>Bermain ayunan pantai Dream Island Bali , Temukan sisi mengerikan pulau Bali  Taman Festival, Wisata kuliner keluarga di restoran terbaik di Sanur
+            jalan-jalan ke surganya veggie: Zula Vegetarian Paradise , Melompat-lompat di atas trampolin dan naik komidi putar  Peek A Boo Kid’s Play Cafe
+        </item>
+        <item>Selain pesona keindahan pantai yang masih alami, Balangan beach menjadi lokasi favorit para peselancar kelas dunia. Ini didukung dengan ombaknya yang tinggi, panjang, dan besar.
+            Pantai ini sangat cocok bagi para peselancar yang menyukai tantangan dan bukan untuk peselancar pemula.
+            Para peselancar sangat betah berada di pantai, dari pagi hingga sore hari, menaklukkan ombak dengan papan surfingnya.
+            Terutama peselancar dari negara Australia yang sudah sering datang ke Bali.
+        </item>
+        <item>Mengunjungi “pulau karang” yang indah,Mengunjungi Gua Ular Suci,Mengunjungi Gua Air Suci,Mengunjungi pura suci di sekitar area Tanah Lot,
+            Menyaksikan upacara keagamaan,Menikmati momen sunset terindah,
+        </item>
+        <item>Dream Museum Zone (DMZ) Bali. Alamanya berada di Jalan Nakula No.33X, Legian, Kuta – Bali. Lihat disini untuk peta lokasi Dream Museum Zone
+            5GX Bali Reverse Bungy. Lokasinya berada di Jalan Raya Legian No 83, Legian, Kuta.
+            Mengunjungi pasar seni Legian. Alamatnya berada di Jalan Melasti No.116, Legian, Kuta
+        </item>
+        <item>Bali Collection,Bali International Convention Centre,Golf Course Nusa Dua,Grand Hyatt Bali,Kayumanis Nusa Dua Villa dan Spa
+            Melia Bali
+            Royal Kamuela Villa dan Spa Nusa Dua Resort
+            The Laguna
+            The Westin Resort Nusa Dua
+            Nusa dua resort dan spa
+        </item>
+        <item>Wisata Pantai Pabean Ketewel di Sukawati Gianyar Bali merupakan pantai yang cukup terkenal Bagi pecinta surfing karena menyajikan panorama ombak yang indah dan besar, sehingga menjadi incaran para penakluk ombak untuk “menarikan” papan surfingnya pada bulan-bulan tertentu.
+            Banjar Pabean merupakan perkampungan nelayan, oleh karena itu anda bisa menemukan beberapa perahu terparkir di tepi pantai pada siang hari.
+            Walaupun dekat dengan perkampungan pantai ini sungguh sangat sepi dari keramaian, sehingga sangat cocok untuk menginginkan suasana sepi dalam mengisi liburannya.
+            Jadi jika anda kebetulan berlibur ke Bali, tidak ada salahnya untuk mengunjungi pantai yang satu ini.
+        </item>
+        <item>Pantai Indrayanti dapat menjadi alternatif wisata pantai bagi anda, karena selain kita di suguhi keindahan pantai yang ada kita
+        juga dapat menikmati makanan yang dapat dibeli di pinggiran pantai. Terdapat restoran yang berupa Gazebo yang menyediakan berbagai masakan
+        laut dan sayur lombok ijo untuk para pengunjung. Gazebo akan memberi kesan yang lebih alami untuk anda menikmati pantai.
+        </item>
+        <item>Malioboro menyajikan berbagai aktivitas belanja, mulai dari bentuk aktivitas tradisional sampai dengan aktivitas belanja modern.
+            Salah satu cara berbelanja di Malioboro adalah dengan proses tawar-menawar terutama untuk komoditi barang barang yang berupa souvenir
+            dan cenderamata yang dijajakan oleh pedagang kaki lima yang berjajar di sepanjang trotoar jalan Malioboro. Berbagai macam cederamata dan
+            kerajinan dapat anda dapatkan disini seperti kerajinan dari perak, kulit, kayu, kain batik, gerabah dan sebagainya.
+        </item>
+        <item>Museum ini terdiri dari dua lantai dan mempunyai fasilitas yang cukup lengkap sebagai media pembelajaran. Lantai pertama berisikan
+            benda- benda koleksi  museum yang dibagi menjadi beberapa ruangan dengan setiap ruangan mempunyai tema yang berbeda-beda, mulai dari
+            Vulcano World, On the Merapi Vulcano Trail, Manusia dan Gunung Merapi,  Bencana Gempa Bumi dan Tsunami, Bencana Pergerakan Tanah, Diorama,
+            Peralatan Survei,  Extra- Terestrial Vulcano, dan Fasilitas penunjang lainnya. Dilantai dua terdapat Gedung Pemutaran film  tentang gunung
+            merapi.
+        </item>
+        <item>Parangtritis memiliki pemandangan yang unik yang tidak terdapat pada obyek wisata lain, yaitu pantai yang memiliki ombak yang besar
+            dan terdapatnya gunung-gunung pasir disektar kawasana pantai tersebut yang disebut dengan gumuk. Pada musim kemarau angin biasanya
+            akan bertiup lebih cepat dan ombak akan bisa mencapai ketinggian 2 – 3 meter. Karena ombaknya yang besar maka pengunjung Pantai
+            Parangtritis dilarang untuk berenang di seputaran pantai, untuk itu sudah disediakan fasilitas pemandian umum yang bisa digunakan
+            untuk para pengunjung yang ingin berenang dengan aman dan nyaman.
+            Ada pemandian unik yang terdapat tak jauh dari kawasan Pantai Parangtritis yaitu Pemandian Parang Wedang.
+        </item>
+        <item>Denah asli Candi Prambanan berbentuk persegi panjang, terdiri atas halaman luar dan tiga pelataran, yaitu Jaba (pelataran luar),
+            Tengahan (pelataran tengah) dan Njeron (pelataran dalam). Halaman luar merupakan areal terbuka yang mengelilingi pelataran luar.
+            Pelataran luar berbentuk bujur dengan luas 390 m2. Pelataran ini dahulu dikelilingi oleh pagar batu yang kini sudah tinggal reruntuhan.
+            Pelataran luar saat ini hanya merupakan pelataran kosong. Belum diketahui apakah semula terdapat bangunan atau hiasan lain di pelataran ini.
+        </item>
+    </string-array>
+    <string-array name="place_locations">
+        <item>Timur Kota Denpasar, Ibukota Bali, dan berada di wilayah Kotamadya Denpasar Bali.</item>
+        <item>Di jalan pantai Balangan, masuk dalam wilayah Desa Ungasan, Kelurahan Jimbaran, Kecamatan Kuta Selatan, Bali.</item>
+        <item>Beraban, Kediri, Kabupaten Tabanan, Bali 8217</item>
+        <item>Legian Kuta, Badung Regency, Bali</item>
+        <item>BTDC Area Nusa Dua, Kuta Selatan, Kabupaten Badung, Bali</item>
+        <item>Desa Ketewel, Kecamatan Sukawati, Kabupaten Gianyar, Bali, Indonesia</item>
+        <item>Berada di Dusun Ngasem, Desa Tepus, Gunungkidul</item>
+        <item>Jl. (Jalan) Malioboro Jogja (Yogyakarta)</item>
+        <item>Jalan Boyong, Dusun Banteng, Desa Hargobinangun, Kecamatan Pakem, Kabupaten Sleman, Yogyakarta</item>
+        <item>Parangtritis, kecamatan Kretek, kabupaten Bantul, Yogyakarta</item>
+        <item>Bokoharjo, Kec. Prambanan, Kabupaten Sleman, Daerah Istimewa Yogyakarta</item>
+    </string-array>
+    <array name="places_picture">
+        <item>@drawable/bali_sanur</item>
+        <item>@drawable/bali_balangan</item>
+        <item>@drawable/bali_tanahlot</item>
+        <item>@drawable/bali_legian</item>
+        <item>@drawable/bali_nusadua</item>
+        <item>@drawable/bali_pabean</item>
+        <item>@drawable/jogja_indrayanti</item>
+        <item>@drawable/jogja_malioboro</item>
+        <item>@drawable/jogja_museummerapi</item>
+        <item>@drawable/jogja_parangtritis</item>
+        <item>@drawable/jogja_prambanan</item>
+    </array>
+</resources>
