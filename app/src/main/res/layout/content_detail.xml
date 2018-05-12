@@ -1,0 +1,124 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/righteous"
+            android:text="Deskripsi"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/tvDeskripsiDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:maxLines="3"
+            android:text="Deskripsi"
+            android:textColor="@color/colorBlackStyle" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_arrow_drop_down_black_24dp"
+                android:clickable="true" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/show"
+                android:alpha="0.2"
+                android:background="#000" />
+
+            <ImageButton
+                android:id="@+id/hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_arrow_drop_up_black_24dp"
+                android:clickable="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/righteous"
+            android:text="Lokasi"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/tvLokasiDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Lokasi"
+            android:textColor="@color/colorBlackStyle" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/righteous"
+            android:text="Fasilitas"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/tvFasilitasDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Fasilitas"
+            android:textColor="@color/colorBlackStyle" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/righteous"
+            android:text="Harga"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/tvHargaDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather_black"
+            android:text="Harga"
+            android:textColor="@color/colorBlackStyle" />
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

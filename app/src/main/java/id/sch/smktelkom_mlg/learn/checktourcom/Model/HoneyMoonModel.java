@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 
 public class HoneyMoonModel implements Serializable {
-    String Deskripsi, Destinasi, Fasilitas, Harga, IDPacket, Lokasi, url;
+    private String Deskripsi, Destinasi, Fasilitas, Harga, IDPacket, Lokasi, url;
 
     public HoneyMoonModel() {
     }

@@ -75,10 +75,20 @@ public class HoneyMoonAdapter extends RecyclerView.Adapter<HoneyMoonAdapter.View
                 detailIntent.putExtra("Lokasi", tvLokasi);
                 detailIntent.putExtra("url", ivUrl);
                 view.getContext().startActivity(detailIntent);
-
             }
         });
+        holder.btnShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT,
+                        "Check out this '" + mData.getDestinasi() + "' in CheckTourApps");
+                sendIntent.setType("text/plain");
+                context.startActivity(sendIntent);
+            }
+        });
 
     }
 

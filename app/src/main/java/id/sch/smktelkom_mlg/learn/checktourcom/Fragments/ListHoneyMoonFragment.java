@@ -87,6 +87,7 @@ public class ListHoneyMoonFragment extends Fragment {
                 mListData.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     mHoneyMoon = snapshot.getValue(HoneyMoonModel.class);
+                    Log.d("data", mListData.toString());
                     mListData.add(mHoneyMoon);
                 }
                 Log.d("data", mListData.toString());

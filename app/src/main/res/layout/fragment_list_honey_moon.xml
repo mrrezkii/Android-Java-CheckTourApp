@@ -1,13 +1,27 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhiteStyle"
-    android:orientation="vertical">
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/righteous"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Honeymoon"
+        android:textColor="@color/colorWhiteStyle"
+        android:textSize="26dp" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/listHoneyMoon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp" />
+        android:layout_marginTop="70dp"
+        android:clipToPadding="false" />
 
 </FrameLayout>
