@@ -48,11 +48,14 @@
             android:name=".BottomNavigation.NavHoneyMoonActivity"
             android:screenOrientation="portrait"
             android:theme="@style/CheckTourTheme" />
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".DetailActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".BookNowActivity" />
+        <activity android:name=".NoteActivity"></activity>
     </application>
 
 </manifest>

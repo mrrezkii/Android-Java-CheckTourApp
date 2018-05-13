@@ -19,20 +19,20 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import id.sch.smktelkom_mlg.learn.checktourcom.Adapter.HoneyMoonAdapter;
-import id.sch.smktelkom_mlg.learn.checktourcom.Model.HoneyMoonModel;
+import id.sch.smktelkom_mlg.learn.checktourcom.Adapter.DataAdapter;
+import id.sch.smktelkom_mlg.learn.checktourcom.Model.DataModel;
 import id.sch.smktelkom_mlg.learn.checktourcom.R;
 
 
 public class ListHoneyMoonFragment extends Fragment {
 
     protected Context context;
-    HoneyMoonModel mHoneyMoon;
-    List<HoneyMoonModel> mListData = new ArrayList<>();
+    DataModel mHoneyMoon;
+    List<DataModel> mListData = new ArrayList<>();
     RecyclerView.Adapter adapter;
     private RecyclerView listHoneyMoon;
     private LinearLayoutManager linearLayoutManager;
-    private HoneyMoonAdapter honeyMoonAdapter;
+    private DataAdapter dataAdapter;
     private DatabaseReference mData;
     private FirebaseDatabase mDatasFirebase;
 
@@ -63,10 +63,10 @@ public class ListHoneyMoonFragment extends Fragment {
 
         listHoneyMoon = rootView.findViewById(R.id.listHoneyMoon);
         linearLayoutManager = new LinearLayoutManager(context);
-        honeyMoonAdapter = new HoneyMoonAdapter(getContext());
+        dataAdapter = new DataAdapter(getContext());
 
         listHoneyMoon.setLayoutManager(linearLayoutManager);
-        listHoneyMoon.setAdapter(honeyMoonAdapter);
+        listHoneyMoon.setAdapter(dataAdapter);
 
         loadData();
 
@@ -75,7 +75,7 @@ public class ListHoneyMoonFragment extends Fragment {
     }
 
     private void loadData() {
-        mHoneyMoon = new HoneyMoonModel();
+        mHoneyMoon = new DataModel();
 
         mDatasFirebase = FirebaseDatabase.getInstance();
         mData = mDatasFirebase.getReference("Honeymoon");
@@ -83,15 +83,15 @@ public class ListHoneyMoonFragment extends Fragment {
         mData.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                honeyMoonAdapter.clear();
+                dataAdapter.clear();
                 mListData.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    mHoneyMoon = snapshot.getValue(HoneyMoonModel.class);
+                    mHoneyMoon = snapshot.getValue(DataModel.class);
                     Log.d("data", mListData.toString());
                     mListData.add(mHoneyMoon);
                 }
                 Log.d("data", mListData.toString());
-                honeyMoonAdapter.addAll(mListData);
+                dataAdapter.addAll(mListData);
             }
 
             @Override

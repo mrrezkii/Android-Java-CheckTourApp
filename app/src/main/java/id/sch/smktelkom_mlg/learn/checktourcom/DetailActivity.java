@@ -16,6 +16,7 @@ import com.bumptech.glide.Glide;
 public class DetailActivity extends AppCompatActivity {
     ImageView imageView;
     TextView tvDeskripsi, tvFasilitas, tvHarga, tvLokasi;
+    TextView tvDestinasi;
     Button btnBook;
     ImageView show, hide;
 
@@ -29,6 +30,7 @@ public class DetailActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         imageView = findViewById(R.id.imageView);
+        tvDestinasi = findViewById(R.id.tvDestinasi);
         tvDeskripsi = findViewById(R.id.tvDeskripsiDetail);
         tvFasilitas = findViewById(R.id.tvFasilitasDetail);
         tvHarga = findViewById(R.id.tvHargaDetail);
@@ -51,6 +53,7 @@ public class DetailActivity extends AppCompatActivity {
         Glide.with(this)
                 .load(gambar)
                 .into(imageView);
+        tvDestinasi.setText(destinasi);
         tvDeskripsi.setText(deskripsi);
         tvFasilitas.setText(fasilitas);
         tvHarga.setText(harga);
@@ -101,5 +104,12 @@ public class DetailActivity extends AppCompatActivity {
 
     private void loadPayment() {
 
+        String destinasi = tvDestinasi.getText().toString();
+        String harga = tvHarga.getText().toString();
+
+        Intent bookIntent = new Intent(DetailActivity.this, BookNowActivity.class);
+        bookIntent.putExtra("Destinasi", destinasi);
+        bookIntent.putExtra("Harga", harga);
+        startActivity(bookIntent);
     }
 }
