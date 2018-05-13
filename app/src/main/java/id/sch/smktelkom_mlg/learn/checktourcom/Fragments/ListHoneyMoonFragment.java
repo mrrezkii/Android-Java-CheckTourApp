@@ -1,5 +1,6 @@
 package id.sch.smktelkom_mlg.learn.checktourcom.Fragments;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -35,6 +36,7 @@ public class ListHoneyMoonFragment extends Fragment {
     private DataAdapter dataAdapter;
     private DatabaseReference mData;
     private FirebaseDatabase mDatasFirebase;
+    private ProgressDialog mProgressDialog;
 
 
     public ListHoneyMoonFragment() {
@@ -60,6 +62,10 @@ public class ListHoneyMoonFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_list_honey_moon, container, false);
+
+        mProgressDialog = new ProgressDialog(getContext());
+        mProgressDialog.setMessage("Loading ...");
+        mProgressDialog.show();
 
         listHoneyMoon = rootView.findViewById(R.id.listHoneyMoon);
         linearLayoutManager = new LinearLayoutManager(context);

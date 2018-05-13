@@ -16,34 +16,34 @@ import java.util.ArrayList;
 import java.util.List;
 
 import id.sch.smktelkom_mlg.learn.checktourcom.DetailActivity;
-import id.sch.smktelkom_mlg.learn.checktourcom.Model.HoneyMoonModel;
+import id.sch.smktelkom_mlg.learn.checktourcom.Model.DataModel;
 import id.sch.smktelkom_mlg.learn.checktourcom.R;
 
 /**
  * Created by Rezki on 5/10/2018.
  */
 
-public class HoneyMoonAdapter extends RecyclerView.Adapter<HoneyMoonAdapter.ViewHolder> {
+public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
-    private List<HoneyMoonModel> mListData;
+    private List<DataModel> mListData;
     private Context context;
 
-    public HoneyMoonAdapter(Context context) {
+    public DataAdapter(Context context) {
         mListData = new ArrayList<>();
         this.context = context;
     }
 
     @Override
-    public HoneyMoonAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public DataAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view_adapter, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
         return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(final HoneyMoonAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(final DataAdapter.ViewHolder holder, int position) {
 
-        final HoneyMoonModel mData = mListData.get(position);
+        final DataModel mData = mListData.get(position);
         holder.tvJudul.setText(mData.getDestinasi());
         holder.tvHarga.setText(mData.getHarga());
         holder.tvDeskripsi.setText(mData.getDeskripsi());
@@ -97,18 +97,18 @@ public class HoneyMoonAdapter extends RecyclerView.Adapter<HoneyMoonAdapter.View
         return null != mListData ? mListData.size() : 0;
     }
 
-    private void add(HoneyMoonModel item) {
+    private void add(DataModel item) {
         mListData.add(item);
         notifyItemInserted(mListData.size() - 1);
     }
 
-    public void addAll(List<HoneyMoonModel> barangList) {
-        for (HoneyMoonModel honeyMoonModel : barangList) {
-            add(honeyMoonModel);
+    public void addAll(List<DataModel> barangList) {
+        for (DataModel dataModel : barangList) {
+            add(dataModel);
         }
     }
 
-    public void remove(HoneyMoonModel item) {
+    public void remove(DataModel item) {
         int position = mListData.indexOf(item);
         if (position > -1) {
             mListData.remove(position);
@@ -122,7 +122,7 @@ public class HoneyMoonAdapter extends RecyclerView.Adapter<HoneyMoonAdapter.View
         }
     }
 
-    private HoneyMoonModel getItem(int position) {
+    private DataModel getItem(int position) {
         return mListData.get(position);
     }
 

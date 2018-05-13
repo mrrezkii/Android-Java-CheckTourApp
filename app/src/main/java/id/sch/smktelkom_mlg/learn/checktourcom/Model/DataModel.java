@@ -6,13 +6,13 @@ import java.io.Serializable;
  * Created by Rezki on 5/2/2018.
  */
 
-public class HoneyMoonModel implements Serializable {
+public class DataModel implements Serializable {
     private String Deskripsi, Destinasi, Fasilitas, Harga, IDPacket, Lokasi, url;
 
-    public HoneyMoonModel() {
+    public DataModel() {
     }
 
-    public HoneyMoonModel(String deskripsi, String destinasi, String fasilitas, String harga, String IDPacket, String lokasi, String url) {
+    public DataModel(String deskripsi, String destinasi, String fasilitas, String harga, String IDPacket, String lokasi, String url) {
         Deskripsi = deskripsi;
         Destinasi = destinasi;
         Fasilitas = fasilitas;

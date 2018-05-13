@@ -9,6 +9,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="setting" />
+        android:text="Cooming soon in next version"
+        android:textColor="@color/colorBlackStyle"
+        android:textSize="22sp" />
 
 </RelativeLayout>

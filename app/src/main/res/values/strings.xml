@@ -65,5 +65,9 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
     <string name="nav_home">Home</string>
+    <string name="order_warning">Halaman ini berisi informasi cara-cara melakukan pemesanan paket tour sebelum menggunakan layanan check and tour.</string>
+    <string name="fill_blank_bank">NAMA TRANSFER HARAP DIISI</string>
+    <string name="fill_blank_nama">NAMA PEMILIK REKENING HARAP DIISI</string>
+    <string name="fill_blank_jumlah">JUMLAH TRANSFER HARAP DIISI</string>
 
 </resources>

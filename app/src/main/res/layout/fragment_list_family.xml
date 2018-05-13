@@ -1,17 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhiteStyle"
-    android:clipToPadding="false">
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/righteous"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Family"
+        android:textColor="@color/colorWhiteStyle"
+        android:textSize="26dp" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/listFamily"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="70dp"
+        android:clipToPadding="false" />
 
-    </android.support.v7.widget.RecyclerView>
-
-</android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

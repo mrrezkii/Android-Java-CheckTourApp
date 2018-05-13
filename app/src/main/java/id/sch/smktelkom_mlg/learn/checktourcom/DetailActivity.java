@@ -111,5 +111,7 @@ public class DetailActivity extends AppCompatActivity {
         bookIntent.putExtra("Destinasi", destinasi);
         bookIntent.putExtra("Harga", harga);
         startActivity(bookIntent);
+        finish();
+
     }
 }
