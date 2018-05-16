@@ -114,4 +114,8 @@ public class DetailActivity extends AppCompatActivity {
         finish();
 
     }
+
+    @Override
+    public void onBackPressed() {
+    }
 }

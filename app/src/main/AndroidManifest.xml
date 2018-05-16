@@ -60,6 +60,10 @@
         <activity
             android:name=".NoteActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroApp.SplashScreenEnd"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
     </application>
 
 </manifest>
